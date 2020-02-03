@@ -21,13 +21,13 @@ for (let i = 0; i < words.length; i++) {
     let word = words[i]; 
     let currentValue = uniques.get(word);
     if (uniques.get(word)) {  
-        uniques.set(word, currentValue +1)
+        uniques.set(word, currentValue +1); 
     } else {
-        uniques.set(word, 1)
+        uniques.set(word, 1); 
     }  
  }
  
- console.log(uniques)
+ console.log(uniques); 
 
 
  
