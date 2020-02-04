@@ -7,16 +7,16 @@ let soliloquy = "To be, or not to be, that is the question:";
 });
 
 
-//Sorts the array numerically 
-let a = [8, -17, 42, -99]; 
-a.sort(function(a, b) { 
-    return a - b; 
-}); 
+// //Sorts the array numerically 
+// let a = [8, -17, 42, -99]; 
+// a.sort(function(a, b) { 
+//     return a - b; 
+// }); 
 
 
 // sorting array anonymous way
-let aa = [99,17,-12,5];
-aa.sort(function(a,b) { return a-b; });
-aa.forEach(function(a,b){
-  console.log(a-b);
+let aa = [102,21,-22,7];
+aa.sort(function(b,c) { return b-c; });
+aa.forEach(function(b,c){
+  console.log(b);
 });
