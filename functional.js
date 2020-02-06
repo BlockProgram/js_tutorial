@@ -106,3 +106,9 @@ function functionalLengths(elements) {
     }
 
  console.log(functionalLengths(states)); 
+
+ function functionalLengths(states) {
+    return states.reduce((lengths, state) => { 
+        lengths[state] = state.length;
+         return lengths;}, {});
+  }
