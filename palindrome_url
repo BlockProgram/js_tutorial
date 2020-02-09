@@ -1,0 +1,17 @@
+#!/usr/local/bin/node
+
+let request = require("request");
+let Phrase = require("mhartl-palindrome");  
+let url = "http://cdn.learnenough.com/phrases.txt"
+let listPalindromes = []  
+
+request(url, function(error, response, body) {
+  let lines = body.split("\n"); 
+  let palindromes = lines.filter(line => new Phrase(line).palindrome())  ; 
+
+  palindromes.forEach(function(palindrome) {  
+      console.log("Palindrome detected!", palindrome); 
+  });
+});
+
+
